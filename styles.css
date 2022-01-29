@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: url(./bg-splash-01.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: Merriweather;
+  color: white;
+  padding: 80px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  border-radius: 40%;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 2px solid #707a0f;
+  object-fit: cover;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+p {
+  font-size: 30px;
+  margin: 50px;
+  font-weight: bolder;
+}
+
+input {
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #fcad03f5;
+  color: white;
+  font-weight: bolder;
+  
+}
+
+.button:hover {
+  background-color: #087765;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 20px;
+  }
+  input {
+    padding: 8px;
+    font-size: 15px;
+  }
+  body {
+    padding: 40px;
+  }
+  img {
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .button {
+    margin-top: 20px;
+  }
+}
